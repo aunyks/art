@@ -34,6 +34,10 @@ export default () => {
           color: black;
           background: #fab700;
         }
+
+        @media (prefers-color-scheme: dark) {
+          color: black;
+        }
       `}</style>
       <p style={{ position: 'absolute', zIndex: '1', top: '40px', left: '40px', width: '50%' }}>True Potential Card v1</p>
       <a href="https://art.aunyks.com" style={{ position: 'absolute', zIndex: '1', bottom: '40px', right: '40px' }}>&copy; 2020 Gerald Nash</a>
