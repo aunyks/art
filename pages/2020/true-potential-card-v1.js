@@ -33,13 +33,18 @@ export default () => {
         html, body {
           color: black;
           background: #fab700;
+          overflow: hidden;
         }
 
         @media (prefers-color-scheme: dark) {
           color: black;
         }
       `}</style>
-      <p style={{ position: 'absolute', zIndex: '1', top: '40px', left: '40px', width: '50%' }}>True Potential Card v1</p>
+      <p style={{ position: 'absolute', zIndex: '1', top: '40px', left: '40px', width: '50%' }}>
+        True Potential Card v1
+        <br />
+        Drag and zoom to look around the card.
+      </p>
       <a href="https://art.aunyks.com" style={{ position: 'absolute', zIndex: '1', bottom: '40px', right: '40px' }}>&copy; 2020 Gerald Nash</a>
       <Canvas camera={{ position: [0, -2, 0], fov: 50 }}
         onCreated={({ camera, gl, scene }) => {
