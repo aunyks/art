@@ -1,3 +1,4 @@
+import DefaultHead from 'components/DefaultHead'
 import React, { Suspense, useRef, useEffect, useState } from 'react'
 import { Canvas, extend, useLoader, useFrame } from 'react-three-fiber'
 import * as THREE from 'three'
@@ -28,8 +29,13 @@ const Card = () => {
 
 export default () => {
   return (
-    <div className="w-screen h-screen">
-      <style jsx>{`
+    <>
+      <DefaultHead
+        title="True Potential Card v1"
+        description="A custom credit card for those increasing potential."
+      />
+      <div className="w-screen h-screen">
+        <style jsx>{`
         html, body {
           color: black;
           background: #fab700;
@@ -40,32 +46,33 @@ export default () => {
           color: black;
         }
       `}</style>
-      <p style={{ position: 'absolute', zIndex: '1', top: '40px', left: '40px', width: '50%' }}>
-        True Potential Card v1
+        <p style={{ position: 'absolute', zIndex: '1', top: '40px', left: '40px', width: '50%' }}>
+          True Potential Card v1
         <br />
         Drag and zoom to look around the card.
       </p>
-      <a href="https://art.aunyks.com" style={{ position: 'absolute', zIndex: '1', bottom: '40px', right: '40px' }}>&copy; 2020 Gerald Nash</a>
-      <Canvas camera={{ position: [0, -2, 0], fov: 50 }}
-        onCreated={({ camera, gl, scene }) => {
-          camera.lookAt(new THREE.Vector3(0, 0, 0))
-          if (window.matchMedia('(max-width: 640px)').matches) {
-            camera.position.set(0, -4, 0)
-          }
-          scene.background = new THREE.Color(0xfab700)
-          gl.shadowMap.enabled = true
-          gl.shadowMap.type = THREE.PCFSoftShadowMap
-          const OrbitControls = require('three/examples/jsm/controls/OrbitControls').OrbitControls
-          const controls = new OrbitControls(camera, gl.domElement)
-          controls.update()
-        }}>
-        <ambientLight />
-        <pointLight args={[0xffffff, 0.5]} position={[5, 10, -10]} />
-        <pointLight position={[1, -10, 5]} />
-        <Suspense fallback={<ModelLoading />}>
-          <Card />
-        </Suspense>
-      </Canvas>
-    </div>
+        <a href="https://art.aunyks.com" style={{ position: 'absolute', zIndex: '1', bottom: '40px', right: '40px' }}>&copy; 2020 Gerald Nash</a>
+        <Canvas camera={{ position: [0, -2, 0], fov: 50 }}
+          onCreated={({ camera, gl, scene }) => {
+            camera.lookAt(new THREE.Vector3(0, 0, 0))
+            if (window.matchMedia('(max-width: 640px)').matches) {
+              camera.position.set(0, -4, 0)
+            }
+            scene.background = new THREE.Color(0xfab700)
+            gl.shadowMap.enabled = true
+            gl.shadowMap.type = THREE.PCFSoftShadowMap
+            const OrbitControls = require('three/examples/jsm/controls/OrbitControls').OrbitControls
+            const controls = new OrbitControls(camera, gl.domElement)
+            controls.update()
+          }}>
+          <ambientLight />
+          <pointLight args={[0xffffff, 0.5]} position={[5, 10, -10]} />
+          <pointLight position={[1, -10, 5]} />
+          <Suspense fallback={<ModelLoading />}>
+            <Card />
+          </Suspense>
+        </Canvas>
+      </div>
+    </>
   )
 }
