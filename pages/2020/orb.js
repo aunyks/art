@@ -58,7 +58,7 @@ export default () => {
           }}>
           <ambientLight intensity={2} />
           <pointLight args={[0xffffff, 1]} position={[5, 10, -10]} />
-          <pointLight args={[0xffffff, 1]} position={[-3, -7, 5]} />
+          <pointLight args={[0xffffff, 3]} position={[-3, -7, 5]} />
           <Suspense fallback={<ModelLoading />}>
             <Orb />
           </Suspense>
