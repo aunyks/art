@@ -36,12 +36,12 @@ export default () => {
   return (
     <>
       <DefaultHead
-        title="Orb"
+        title="The Orb"
         description="Don't look for long. The trance is dizzying."
       />
       <div className="w-screen h-screen" style={{ overflow: 'hidden', color: 'white' }}>
         <p style={{ position: 'absolute', zIndex: '1', top: '40px', left: '40px', width: '50%' }}>
-          Orb
+          The Orb
         <br />
         Don't look for long. The trance is dizzying.
       </p>
