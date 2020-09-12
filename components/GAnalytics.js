@@ -1,4 +1,6 @@
 export default function GAnalytics() {
+  return null
+  /*
   return (
     <>
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74950564-6"></script>
@@ -12,4 +14,5 @@ export default function GAnalytics() {
       </script>
     </>
   )
+  */
 }
