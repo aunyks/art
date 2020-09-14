@@ -5,7 +5,7 @@ export default () => (
   <LinksPage
     pageTitle="2020 Art Pieces"
     title="2020 art pieces">
-    <Link href="/2020/two-sides-at-sea">two sides at sea</Link>
+    <Link href="/2020/two-sides-of-sea">two sides of sea</Link>
     <Link href="/2020/haze">haze</Link>
     <Link href="/2020/orb">orb</Link>
     <Link href="/2020/true-potential-card-v1">true potential card v1</Link>

@@ -15,7 +15,7 @@ export default () => {
   return (
     <>
       <DefaultHead
-        title="Two Sides at Sea"
+        title="Two Sides of Sea"
         description=""
       />
       <div className="w-screen h-screen">
@@ -25,7 +25,7 @@ export default () => {
         }
       `}</style>
         <p className="text-white" style={{ position: 'absolute', zIndex: '1', top: '40px', left: '40px', width: '75%' }}>
-          Two Sides at Sea
+          Two Sides of Sea
       </p>
         <div className="h-full flex flex-col justify-center bg-black">
           <div className="mx-auto w-1/2 lg:w-2/3 flex flex-col lg:flex-row justify-center">
