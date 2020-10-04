@@ -23,7 +23,13 @@ export default () => {
       </p>
         <div className="h-full flex flex-col justify-center">
           <div className="mx-auto w-3/4 lg:w-1/3 flex flex-col lg:flex-row justify-center">
-            <video autoPlay loop controls className="w-full mx-auto">
+            <video autoPlay loop controls className="w-full mx-auto"
+              style={{
+                borderStyle: 'solid',
+                borderWidth: '5px',
+                borderColor: 'white',
+                borderRadius: '10px'
+              }}>
               <source src="/assets/vid/serenitys-arrival.mp4" type="video/mp4"></source>
             </video>
           </div>
