@@ -10,7 +10,6 @@ export default function BridgeTo() {
       />
       <Head>
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
-        <title>Bridge To</title>
         <script src="/js/three/three.mod.js"></script>
         <script src="/js/three/three.doc.js"></script>
         <script src="/js/three/three.plc.js"></script>
