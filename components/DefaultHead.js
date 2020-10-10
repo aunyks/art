@@ -11,7 +11,7 @@ export default function DefaultHead({
     <Head>
       <title>{effectiveTitle}</title>
       <meta key="charset" charSet="UTF-8" />
-      <meta key="viewport" name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta key="viewport" name="viewport" content="width=device-width,initial-scale=1.0" />
       <meta key="description" content={description} />
       <meta key="author" name="author" content="Gerald Nash" />
       <meta key="theme-color" name="theme-color" content="#fab700" />

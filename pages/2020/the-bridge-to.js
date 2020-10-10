@@ -5,11 +5,11 @@ export default function BridgeTo() {
   return (
     <>
       <DefaultHead
-        title="Bridge To"
+        title="The Bridge To"
         description="Step onto The Bridge To."
       />
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
         <title>Bridge To</title>
         <script src="/js/three/three.mod.js"></script>
         <script src="/js/three/three.doc.js"></script>
@@ -32,7 +32,14 @@ export default function BridgeTo() {
           width: 100vw;
           height: 100vh;
           margin: 0;
-          overflow-y: hidden;
+          overflow: hidden;
+        }
+
+        body {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: start;
         }
         
         @media (prefers-color-scheme: dark) {
@@ -58,10 +65,9 @@ export default function BridgeTo() {
         }
         
         #preface-text {
-          margin-top: 20%;
           display: flex;
           flex-direction: column;
-          padding: 10vh 10vw;
+          padding: 20vh 10vw;
           height: 100vh;
         }
         
@@ -92,10 +98,8 @@ export default function BridgeTo() {
           color: inherit;
         }
         
-        @media (prefers-color-scheme: dark) {
-        
-          html,
-          body {
+        @media (prefers-color-scheme: dark) {}
+          html,body {
             background: var(--dark-bg-color);
             color: var(--dark-txt-color);
           }
