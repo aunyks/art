@@ -55,7 +55,7 @@ window.addEventListener('load', () => {
       // When not in it, we just use PointerLockControls to move the 
       // camera like a PC first-person shooter
       if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
-        alert('To use immersive mode we\'re about to ask for permission to read your device\'s orientation!')
+        alert('This experience requires immersion. We\'re about to ask for permission to read your device\'s orientation!')
         const permission = await DeviceOrientationEvent.requestPermission()
         if (permission === 'granted') {
           console.log('Orientation mode permission granted')
