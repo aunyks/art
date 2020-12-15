@@ -16,14 +16,13 @@ export default () => {
           overflow: hidden !important;
         }
       `}</style>
-        <p className="text-white" style={{ position: 'absolute', zIndex: '1', top: '40px', left: '40px', width: '75%' }}>
-          Oasis
-          <br />
-          Solitude is but an island away.
-      </p>
         <div className="overflow-hidden h-full flex flex-col justify-center bg-black">
-          <div className="mx-auto lg:w-1/2">
+          <div className="mx-auto w-5/6 lg:w-1/2">
+            <h1>Oasis</h1>
             <img src="/assets/img/oasis.png" className="w-full" />
+            <p>
+              Solitude is but an island away.
+            </p>
           </div>
         </div>
         <a className="text-white" href="https://art.aunyks.com" style={{ position: 'absolute', zIndex: '1', bottom: '40px', right: '40px' }}>&copy; 2020 Gerald Nash</a>
