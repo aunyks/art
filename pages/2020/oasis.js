@@ -8,7 +8,7 @@ export default () => {
     <>
       <DefaultHead
         title="Oasis"
-        description="Solitude is but an island awa"
+        description="Solitude is but an island away."
       />
       <div className="w-screen h-screen">
         <style jsx>{`
@@ -20,7 +20,7 @@ export default () => {
           <div className="mx-auto w-5/6 lg:w-1/2">
             <h1>Oasis</h1>
             <img src="/assets/img/oasis.png" className="w-full" />
-            <p>
+            <p className="text-white">
               Solitude is but an island away.
             </p>
           </div>
